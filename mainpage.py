@@ -35,9 +35,11 @@ def main_page():
         This information helps visualize where most crashes take place and outcomes of these crashes.
         """)
 
-    def run():
+    def run4():
         side_bar_image()
         load_data_source_page()
+
+    run4()
 
 def page2():
     @st.cache_data
