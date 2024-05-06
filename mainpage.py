@@ -17,7 +17,7 @@ import pydeck as pdk
 def main_page():
     # [ST4] image for the sidebar, this function is on every file in my code
     def side_bar_image():
-        image_path = "C:/Users/cmina/One drive-bentley/OneDrive - Bentley University/year 2/CS230/pythonProject/streamlitproject/carcrash.jpg"
+        image_path = "carcrash.jpg"
         st.sidebar.image(image_path, use_column_width=True)
 
     def load_data_source_page():
@@ -37,7 +37,7 @@ def main_page():
 
 def page2():
     def side_bar_image():
-    image_path = "C:/Users/cmina/One drive-bentley/OneDrive - Bentley University/year 2/CS230/pythonProject/streamlitproject/carcrash.jpg"
+    image_path = "carcrash.jpg"
     st.sidebar.image(image_path, use_column_width=True)
 
     @st.cache_data
@@ -200,7 +200,7 @@ def page2():
 
 def page3():
     def side_bar_image():
-    image_path = "C:/Users/cmina/One drive-bentley/OneDrive - Bentley University/year 2/CS230/pythonProject/streamlitproject/carcrash.jpg"
+    image_path = "carcrash.jpg"
     st.sidebar.image(image_path, use_column_width=True)
     
     path = "C:/Users/cmina/One drive-bentley/OneDrive - Bentley University/year 2/CS230/pythonProject/streamlitproject/"
@@ -276,6 +276,9 @@ def page3():
     run2()
 
 def page4():
+    def side_bar_image():
+    image_path = "carcrash.jpg"
+    st.sidebar.image(image_path, use_column_width=True)
     import random
     
     # [PY3] this function changes the color of the bars in the bar chart and the pie chart at random everytime something new
