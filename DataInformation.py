@@ -18,7 +18,7 @@ def generate_random_colors(num_colors):
 
 @st.cache_data
 def read_data():
-    df = pd.read_csv(path + "2017_Crashes_10000_sample.csv")
+    df = pd.read_csv("2017_Crashes_10000_sample.csv")
     return df
 
 
