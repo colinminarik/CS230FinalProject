@@ -149,7 +149,7 @@ def display_crash_analysis(data):
         st.subheader("Top 5 Dates with Least Crashes")
         st.dataframe(bottom_dates)
 
-def main():
+def run():
     side_bar_image()
     Police_text_box()
     st.title('Road Surface Condition Analysis')
@@ -162,4 +162,4 @@ def main():
     interactive_pivot_table2(data=load_data())
     display_crash_analysis(data=load_data())
 
-main()
+run()
