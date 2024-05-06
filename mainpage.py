@@ -36,10 +36,6 @@ def main_page():
         """)
 
 def page2():
-    def side_bar_image():
-    image_path = "carcrash.jpg"
-    st.sidebar.image(image_path, use_column_width=True)
-
     @st.cache_data
     def load_data():
         path = "C:/Users/cmina/One drive-bentley/OneDrive - Bentley University/year 2/CS230/pythonProject/streamlitproject/"
@@ -184,7 +180,6 @@ def page2():
             st.dataframe(bottom_dates)
     
     def run():
-        side_bar_image()
         Police_text_box()
         st.title('Road Surface Condition Analysis')
         display_road_conditions()
@@ -199,10 +194,6 @@ def page2():
     run()
 
 def page3():
-    def side_bar_image():
-    image_path = "carcrash.jpg"
-    st.sidebar.image(image_path, use_column_width=True)
-    
     path = "C:/Users/cmina/One drive-bentley/OneDrive - Bentley University/year 2/CS230/pythonProject/streamlitproject/"
     
     @st.cache(allow_output_mutation=True)
@@ -271,14 +262,11 @@ def page3():
         data = read_data()
         st.title('Crash Map Viewer')
         show_crash_map(data)
-        side_bar_image()
+       
     
     run2()
 
 def page4():
-    def side_bar_image():
-    image_path = "carcrash.jpg"
-    st.sidebar.image(image_path, use_column_width=True)
     import random
     
     # [PY3] this function changes the color of the bars in the bar chart and the pie chart at random everytime something new
@@ -385,7 +373,6 @@ def page4():
     
     
     def run3():
-        side_bar_image()
         data = read_data()
         st.subheader('Interactive Analysis of Total Crashes in Certain Towns')
         interactive_bar_chart(data)
