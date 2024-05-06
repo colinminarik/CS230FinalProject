@@ -393,7 +393,6 @@ def page4():
     run3()
 
 def main():
-    main_page()
     # Sidebar navigation
     st.sidebar.title("Navigation")
     # Create a dictionary of your pages
