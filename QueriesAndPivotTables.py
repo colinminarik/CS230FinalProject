@@ -9,7 +9,7 @@ def side_bar_image():
 @st.cache_data
 def load_data():
     path = "C:/Users/cmina/One drive-bentley/OneDrive - Bentley University/year 2/CS230/pythonProject/streamlitproject/"
-    df = pd.read_csv(path + "2017_Crashes_10000_sample.csv")
+    df = pd.read_csv("2017_Crashes_10000_sample.csv")
     df['POLC_AGNCY_TYPE_DESCR'] = df['POLC_AGNCY_TYPE_DESCR'].str.lower()
     if df.empty:
         st.error("Loaded data is empty.")
