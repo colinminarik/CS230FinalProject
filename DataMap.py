@@ -11,7 +11,7 @@ path = "C:/Users/cmina/One drive-bentley/OneDrive - Bentley University/year 2/CS
 
 @st.cache(allow_output_mutation=True)
 def read_data():
-    df = pd.read_csv(path + "2017_Crashes_10000_sample.csv")
+    df = pd.read_csv("2017_Crashes_10000_sample.csv")
     df.dropna(subset=['LON', 'LAT', 'CITY_TOWN_NAME', 'NUMB_VEHC', 'MAX_INJR_SVRTY_CL'], inplace=True)
     return df
 
